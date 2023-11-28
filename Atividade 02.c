@@ -19,20 +19,21 @@ int main()
     setlocale(LC_ALL, "portuguese");
 
     int i, j;
-    char nome[5][200];
-    int idade[5];
-    float notas[5][3];
-    float media[5];
+    int X = 5, Y =3;
+    char nome[X][200];
+    int idade[X];
+    float notas[X][Y];
+    float media[X];
     int somaNotas = 0;
 
-    for (i = 0; i < 5; i++)
+    for (i = 0; i < X; i++)
     {
         printf("Digite o nome do %d° aluno: ", i + 1);
         gets(nome[i]);
         printf("Digite a idade do %d° aluno: ", i + 1);
         scanf("%d", &idade[i]);
 
-        for (j = 0; j < 3; j++)
+        for (j = 0; j < Y; j++)
         {
             printf("Digite a %d° nota do aluno: ", j + 1);
             scanf("%f", &notas[i][j]);
@@ -44,15 +45,15 @@ int main()
         somaNotas = 0;
 
         fflush(stdin);
-        system ("cls||clear");
+        
     }
 
-    for (i = 0; i < 5; i++)
+    for (i = 0; i < X; i++)
     {
         printf("Nome do %dÂ° aluno: %s \n", i + 1, nome[i]);
         printf("Idade do %dÂ° aluno: %d \n", i + 1, idade[i]);
 
-        for (j = 0; j < 3; j++)
+        for (j = 0; j < Y; j++)
         {
             printf("Notas do aluno: %.2f \n", notas[i][j]);
         }
