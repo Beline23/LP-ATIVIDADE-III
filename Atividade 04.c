@@ -20,59 +20,66 @@ int main()
 
     setlocale(LC_ALL, "portuguese");
 
-    int num, i;
-    int somaPares = 0, qtdPares = 0;
-    int qtdImpares = 0, qtdNegativos = 0;
-    int maior, menor;
+    int numero, i, maior, menor, X = 5;
+    int somaPares = 0;
+    int QTPares = 0;
+    int QTImpares = 0;
+    int QTNegativos = 0;
     float mediaPares, mediaTotal = 0;
 
-    for (i = 0; i < 5; i++)
+    for (i = 0; i < X; i++)
     {
         printf("Digite o %dª número: ", i + 1);
-        scanf("%d", &num);
+        scanf("%d", &numero);
     }
 
-    if (num % 2 == 0)
+    if (numero % 2 == 0)
     {
-        somaPares += num;
-        qtdPares++;
+        somaPares += numero;
+        QTPares++;
     }
-    if (num % 2 != 0)
+    if (numero % 2 != 0)
     {
-        qtdImpares++;
+        QTImpares++;
     }
-    if (num < 0)
+    if (numero < 0)
     {
-        qtdNegativos++;
+        QTNegativos++;
     }
-    if (i == 0 || num > maior)
+    if (i == 0 || numero > maior)
     {
-        maior = num;
+        maior = numero;
     }
-    if (i == 0 || num < menor)
+    if (i == 0 || numero < menor)
     {
-        menor = num;
+        menor = numero;
     }
 
-    mediaTotal += num;
+    mediaTotal += numero;
 
     if (qtdPares > 0)
     {
-        mediaPares = (float)somaPares / qtdPares;
+        mediaPares = (float)somaPares / QTPares;
     }
     else
     {
         mediaPares = 0;
     }
 
-    mediaTotal /= 5;
+    mediaTotal /= X;
 
-    printf("Quantidade de números ímpares: %d\n", qtdImpares);
-    printf("Quantidade de números negativos: %d\n", qtdNegativos);
+    printf("Quantos números ímpares: %d\n", QTImpares);
+    printf("\n");
+    printf("Quantos números negativos: %d\n", QTNegativos);
+    printf("\n");
     printf("Maior número: %d\n", maior);
+    printf("\n");
     printf("Menor número: %d\n", menor);
-    printf("Média de números pares: %.2f\n", mediaPares);
+    printf("\n");
+    printf("Média Pares: %.2f\n", mediaPares);
+    printf("\n");
     printf("Média Total: %.2f\n", mediaTotal);
+    printf("\n");
 
     return 0;
 }
