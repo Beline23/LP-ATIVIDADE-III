@@ -13,7 +13,7 @@ int main()
 {
     setlocale(LC_ALL, "portuguese");
 
-    int n;
+    int Programa;
     char nome[999][200];
     char numeroTelefone[999][200];
     int i;
@@ -21,15 +21,17 @@ int main()
 
     do
     {
-        printf("Selecione 1 - Salvar novo numero. \n");
-        printf("Selecione 2 - Exibir os numeros armazenados. \n");
-        printf("\nDigite a opção ");
-        scanf("%d", &n);
+        printf("Selecione 1) Salvar novo numero. \n");
+        printf("\n");
+        printf("Selecione 2) Exibir os numeros armazenados. \n");
+        printf("\n");
+        printf("Digite a opção: \n");
+        scanf("%d", &Programa);
         printf("\n");
 
         fflush(stdin);
 
-        switch (n)
+        switch (Programa)
         {
 
         case 1:
@@ -60,7 +62,7 @@ int main()
             break;
         }
 
-    } while (n != 2);
+    } while (Programa != 2);
 
     return 0;
 }
