@@ -32,7 +32,7 @@ int main()
         printf("\n");
         printf("2) Exibir total de vendas\n");
         printf("\n");
-        printf("Selecione uma das alternativas acima: ");
+        printf("Selecione uma das opções: n\");
         scanf("%d", &opcao);
 
         fflush(stdin);
