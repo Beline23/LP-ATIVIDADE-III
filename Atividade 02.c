@@ -19,7 +19,7 @@ int main()
     setlocale(LC_ALL, "portuguese");
 
     int i, j;
-    int X = 5, Y =3;
+    int X = 5, Y = 3;
     char nome[X][200];
     int idade[X];
     float notas[X][Y];
