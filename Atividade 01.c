@@ -38,9 +38,7 @@ int main(){
         printf("Digite a altura: \n");
         scanf("%f", &Altura[i]);
 
-           system("cls || clear");
-
-        if (Altura[i] > MaiorAltura)
+                if (Altura[i] > MaiorAltura)
         {
             MaiorAltura = Altura[i];
             strcpy(nomeMaiorAltura, Nome[i]);
