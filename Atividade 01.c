@@ -27,18 +27,18 @@ int main(){
     {
          for (i = 0; i < 5; i++)
     {
-        printf("Digite o nome: ");
+       printf("Digite o nome: \n");
         gets(Nome[i]);
-        printf("Digite a idade: ");
+        printf("Digite a idade: \n");
         scanf("%d", &Idade[i]);
 
-        printf("Digite o peso: ");
+        printf("Digite o peso: \n");
         scanf("%f", &Peso[i]);
 
-        printf("Digite a altura: ");
+        printf("Digite a altura: \n");
         scanf("%f", &Altura[i]);
 
-        system("cls || clear");
+           system("cls || clear");
 
         if (Altura[i] > MaiorAltura)
         {
